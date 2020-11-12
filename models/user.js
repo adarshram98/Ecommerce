@@ -38,7 +38,9 @@ var userSchema = new mongoose.Schema({
     type: Array,
     default: 0,
   },
-});
+},
+{timseStamps : true}
+);
 
 userSchema.virtual("password")
     .set(function(password){

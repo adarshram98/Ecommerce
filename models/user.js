@@ -52,7 +52,7 @@ userSchema.virtual("password")
         this._pass
     })
 
-userSchema.method = {
+userSchema.methods = {
 
     authenticate: function(plainpassword)
     {
